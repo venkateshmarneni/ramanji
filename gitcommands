@@ -1,0 +1,338 @@
+    1  mkdir gitdemo
+    2  cd gitdemo
+    3  pwd
+    4  git init
+    5  ls -a
+    6  cd .git
+    7  ls -a
+    8  cd config
+    9  cat config
+   10  git config --globaluser.name "venkey"
+   11  git config --global user.name "venkey"
+   12  git config --global user.email "venkatunixblog@gmail.com"
+   13  git config --global color.ui true
+   14  cd ..
+   15  git status
+   16  cat >>file
+   17  git status
+   18  git add file
+   19  git status
+   20  git commit file -m "adding new file"
+   21  git status
+   22  touch file{1..5}
+   23  git status
+   24  git add file1 file2
+   25  git status
+   26  git commit -m "adding two file"
+   27  git status
+   28  git status
+   29  ls -lrt
+   30  vi file1
+   31  git status
+   32  git add
+   33  git status
+   34  git add file1
+   35  git status
+   36  git commit -m "adding files"
+   37  git status
+   38  vi file3
+   39  git add file3
+   40  git status
+   41  git commit -m "modified file"
+   42  git status
+   43  git log
+   44  touch .gitignore test.log
+   45  ls
+   46  git status
+   47  vi test.log
+   48  vi .gitignore 
+   49  *.log
+   50  vi .gitignore 
+   51  git status
+   52  git  add file4 file5 .gitignore
+   53  git status
+   54  git commit -m "adding files"
+   55  git status
+   56  git help
+   57  ls -l
+   58  git branch venkatesh
+   59  git checkout venkatesh
+   60  ls
+   61  vi file1
+   62  git add file1
+   63  git commit -m "modified file"
+   64  git status
+   65  cd ..
+   66  cd .
+   67  git checkout master
+   68  ls -lrt
+   69  git checkout venkatesh
+   70  cd gitdemo
+   71  ls -lrt
+   72  cd .
+   73  git checkout master
+   74  ls -lrt
+   75  cat file1
+   76  git merge venkatesh
+   77  cat file1
+   78  ls
+   79  vi file2
+   80  git add file2
+   81  git commit -m "modified file2"
+   82  git checkout venkatesh
+   83  vi file2
+   84  git add file2
+   85  git status
+   86  git commit -m "modified file2"
+   87  git checout master
+   88  git merge venkatesh
+   89  cat file2
+   90  git checkout master
+   91  git merge venkatesh
+   92  git merge tool
+   93  git mergetool
+   94  git mergetool
+   95  git mergetool
+   96  git mergetool
+   97  git mergetool
+   98  git mergetool
+   99  git mergetool
+  100  git mergetool
+  101  git help config
+  102  git status
+  103  git stash
+  104  git mergetool
+  105  pwd
+  106  git add file2
+  107  git status
+  108  git commit -m "merge message"
+  109  git checkout venkatesh 
+  110  cat file2
+  111  git checkout master
+  112  cat file2
+  113  git merge venkatesh
+  114  git checkout venkatesh
+  115  ls -lrt
+  116  vi file2
+  117  git add file2
+  118  git commit -m "ashok"
+  119  git status
+  120  git checkout master
+  121  git merge venkatesh
+  122  cat file2
+  123  git merge venkatesh
+  124  git checkuot venkatesh
+  125  git checkout venkatesh
+  126  git add file2
+  127  git commit -m "ashok"
+  128  git merge venkatesh
+  129  cat file2
+  130  vi file2
+  131  git add file2
+  132  git commit -m "master"
+  133  git checout venkatesh
+  134  git checkout venkatesh
+  135  cat file2
+  136  vi file2
+  137  git add file2
+  138  git commit -m "venkatesh"
+  139  git checkout master
+  140  git merge venkatesh
+  141  cat file2
+  142  git merge venkatesh
+  143  git add .
+  144  git commit -m "vaaaaaa"
+  145  git merge venkatesh
+  146  cat file2
+  147  pwd
+  148  cd ..
+  149  mkdir github
+  150  cd github/
+  151  git init
+  152  git clone https://github.com/ashoknalajala/suresh.git
+  153  ls -lrt
+  154  cd suresh
+  155  ls -lrt
+  156  cat README.md 
+  157  vi README.md 
+  158  git add README.mdd
+  159  git add README.md
+  160  git status
+  161  git commit -m "modified file readme.md"
+  162  git push
+  163  git push origin master
+  164  git pull origin master
+  165  ls -lrt
+  166  cat README.md 
+  167  history
+  168  history >>gitcommands
+  169  ls
+  170  cat gitcommands 
+  171  ls
+  172  git add gitcommands
+  173  git commit -m "gitcommands"
+  174  git push
+  175  exiy
+  176  exit
+  177  git status
+  178  git hub
+  179  exit
+  180  ls
+  181  mkdir anilkumar
+  182  cd anilkumar
+  183  ls
+  184  ls -a
+  185  git init
+  186  ls -a
+  187  cd .git
+  188  ls
+  189  cd ..
+  190  ls
+  191  ls
+  192  ls -a
+  193  git config --global user.name "venkey"
+  194  git config --global user.email "venkatunixblog@gmail.com"
+  195  git config --global color.ui true
+  196  git config --global color.status auto
+  197  git status
+  198  touch naresh1
+  199  ls
+  200  cat >naresh1
+  201  git status
+  202  git add naresh1
+  203  git status
+  204  git commit naresh1 -m "to add new file naresh1"
+  205  git status
+  206  touch file{1..4}
+  207  git add file1 file2
+  208  git status
+  209  git commit -m "adding new file1 file2"
+  210  git status
+  211  vi file1
+  212  git status
+  213  git add file1
+  214  git status
+  215  git commit -m "modifing file1"
+  216  git status
+  217  vi file2
+  218  git add file2
+  219  git status
+  220  git commit -m "modifing file2"
+  221  git status
+  222  git log
+  223  git status
+  224  git log
+  225  git status
+  226  git add file3 file4
+  227  git status
+  228  git log
+  229  touch .gitignore
+  230  touch test.log
+  231  ls
+  232  git status
+  233  vi .gitignore
+  234  git status
+  235  git add .
+  236  git status
+  237  git commit -m ".gitignore"
+  238  git status
+  239  vi file3
+  240  git add file3
+  241  git commit -m "modifing file3"
+  242  ls
+  243  git rm file3
+  244  git status
+  245  git commit -m "delete"
+  246  ls
+  247  git log
+  248  ls
+  249  git branch branchvenkey
+  250  git status
+  251  ls
+  252  git checkout branchvenkey
+  253  ls
+  254  vi file2
+  255  git add file2
+  256  git commit -m "modifing file2"
+  257  git checkout master
+  258  vi file2
+  259  git merge branchvenkey
+  260  vi file2
+  261  git status
+  262  vi file2
+  263  git add file2
+  264  git status
+  265  git commit -m "modified"
+  266  git checkout branchvenkey
+  267  ls
+  268  vi file2
+  269  git add file2
+  270  git commit -m "modified"
+  271  git checkout master
+  272  git merge branchvenkey
+  273  vi file2
+  274  git merge branchvenkey
+  275  git add .
+  276  git commit -m modified"
+
+  277  git commit -m modified"
+
+  278  git commit -m "modified"
+  279  git chckout branchvenkey
+  280  git checkout branchvenkey
+  281  git add .
+  282  git commit -m "modified"
+  283  git checkout master
+  284  git mergetool
+  285  git merge branchvenkey
+  286  ls
+  287  vi file2
+  288  ls
+  289  vi file4
+  290  git add file4
+  291  git status
+  292  git commit -m "modified file4"
+  293  git branch branchvenkey
+  294  git checkout branchvenkey
+  295  ls
+  296  vi file4
+  297  git add file4
+  298  git status
+  299  git commit -m "modified file4"
+  300  git checkout master
+  301  git merge branchvenkey
+  302  vi file4
+  303  git checkout master
+  304  git commit -m "md"
+  305  git add file4
+  306  git commit -m "md"
+  307  git status
+  308  git merge branchvenkey
+  309  mkdir newdir
+  310  git init
+  311  git clone https://github.com/venkateshmarneni/ramanji.git
+  312  ls
+  313  cd newdir
+  314  ls
+  315  ls -a
+  316  ls
+  317  ls
+  318  cd ..
+  319  ls
+  320  cd ramanji
+  321  ls
+  322  vi README.md 
+  323  git add .
+  324  git commit -m "readme file modified"
+  325  git push origin master
+  326  git push origin master
+  327  git push origin master
+  328  git push origin master
+  329  git push origin master
+  330  git push origin master
+  331  git push origin master
+  332  git pull origin master
+  333  ls
+  334  vi README.md 
+  335  history
+  336  history >>gitcommands
